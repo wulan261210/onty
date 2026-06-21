@@ -17,33 +17,49 @@ font-family:'Segoe UI',sans-serif;
 }
 
 body{
-background:#fafafa;
-color:#444;
+background:
+linear-gradient(
+to bottom,
+#fffdf8,
+#f8f1e7,
+#efe3d2
+);
+
+color:#5b4636;
 }
 
 header{
+
 padding:120px 20px;
+
 text-align:center;
 
 background:
+
 linear-gradient(
 180deg,
-#ffffff,
-#f7f7f7
+#fffdf8,
+#f6ecde
 );
+
 }
 
 h1{
+
 font-size:4rem;
-color:#222;
+
+color:#b88a44;
+
 }
 
 .subtitle{
-margin-top:15px;
+
+margin-top:20px;
 
 font-size:1.2rem;
 
-color:#888;
+color:#927457;
+
 }
 
 .btn{
@@ -54,7 +70,13 @@ margin-top:35px;
 
 padding:15px 35px;
 
-background:#222;
+background:
+
+linear-gradient(
+45deg,
+#c9a66b,
+#e3c796
+);
 
 color:white;
 
@@ -78,11 +100,11 @@ h2{
 
 text-align:center;
 
+margin-bottom:45px;
+
+color:#b88a44;
+
 font-size:2rem;
-
-margin-bottom:50px;
-
-color:#222;
 
 }
 
@@ -91,6 +113,7 @@ color:#222;
 display:grid;
 
 grid-template-columns:
+
 repeat(
 auto-fit,
 minmax(260px,1fr)
@@ -102,26 +125,23 @@ gap:30px;
 
 .card{
 
-background:white;
+background:
+
+rgba(255,255,255,.8);
+
+backdrop-filter:
+
+blur(15px);
+
+border:
+
+1px solid
+
+#ead7bc;
 
 border-radius:24px;
 
 overflow:hidden;
-
-box-shadow:
-
-0 10px 30px
-
-rgba(0,0,0,.05);
-
-transition:.3s;
-
-}
-
-.card:hover{
-
-transform:
-translateY(-8px);
 
 }
 
@@ -149,7 +169,7 @@ margin-bottom:10px;
 
 .content p{
 
-color:#777;
+color:#8b6c50;
 
 }
 
@@ -157,19 +177,25 @@ color:#777;
 
 display:block;
 
-margin-top:20px;
-
 text-align:center;
 
 padding:14px;
 
-background:#f2f2f2;
+margin-top:20px;
 
 border-radius:20px;
 
-text-decoration:none;
+background:
 
-color:#222;
+linear-gradient(
+45deg,
+#d8b67a,
+#f2e1bf
+);
+
+color:#6a5238;
+
+text-decoration:none;
 
 }
 
@@ -183,7 +209,7 @@ text-align:center;
 
 line-height:2;
 
-color:#666;
+color:#81664b;
 
 }
 
@@ -195,26 +221,22 @@ grid-template-columns:
 
 repeat(
 auto-fit,
-minmax(300px,1fr)
+minmax(280px,1fr)
 );
 
-gap:20px;
+gap:25px;
 
 }
 
 .box{
 
-background:white;
+background:
+
+rgba(255,255,255,.8);
 
 padding:30px;
 
-border-radius:20px;
-
-box-shadow:
-
-0 8px 20px
-
-rgba(0,0,0,.04);
+border-radius:25px;
 
 }
 
@@ -232,7 +254,7 @@ padding:35px;
 
 text-align:center;
 
-color:#999;
+color:#a8855f;
 
 }
 
@@ -248,7 +270,7 @@ color:#999;
 
 <p class="subtitle">
 
-Elegant • Simple • Timeless
+Elegant • Cream • Timeless
 
 </p>
 
@@ -274,7 +296,7 @@ Explore Collection
 
 <h3>Accessories</h3>
 
-<p>Elegant collections for everyday style.</p>
+<p>Elegant daily collections.</p>
 
 <a class="buy">
 
@@ -294,7 +316,7 @@ View Collection
 
 <h3>Fashion</h3>
 
-<p>Simple and modern curated pieces.</p>
+<p>Simple and beautiful selections.</p>
 
 <a class="buy">
 
@@ -314,7 +336,7 @@ View Collection
 
 <h3>Custom Project</h3>
 
-<p>Personal creations designed specially.</p>
+<p>Specially made collections.</p>
 
 <a class="buy">
 
@@ -358,7 +380,7 @@ View Collection
 
 <h3>Trending</h3>
 
-<p>Popular and elegant selections.</p>
+<p>Elegant and timeless.</p>
 
 </div>
 
@@ -376,40 +398,7 @@ View Collection
 
 Welcome to Innur Project.
 
-A space created to present simple,
-beautiful, and carefully selected collections.
-
-Every detail matters.
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Customer Reviews</h2>
-
-<div class="review">
-
-<div class="box">
-
-★★★★★
-
-<br><br>
-
-Beautiful and elegant.
-
-</div>
-
-<div class="box">
-
-★★★★★
-
-<br><br>
-
-Minimalist and premium.
-
-</div>
+A place for elegant and carefully selected collections.
 
 </div>
 
@@ -446,5 +435,4 @@ WhatsApp
 </footer>
 
 </body>
-
 </html>
