@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
+
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Innur Project</title>
 
@@ -16,116 +17,227 @@ font-family:'Segoe UI',sans-serif;
 }
 
 body{
-background:linear-gradient(
-to bottom,
-#fff0f6,
-#ffd6e7,
-#ffc2dc
-);
-color:#4b1d34;
+background:#fafafa;
+color:#444;
 }
 
 header{
+padding:120px 20px;
 text-align:center;
-padding:90px 20px;
+
+background:
+linear-gradient(
+180deg,
+#ffffff,
+#f7f7f7
+);
 }
 
-header h1{
-font-size:3rem;
-color:#d63384;
+h1{
+font-size:4rem;
+color:#222;
 }
 
-header p{
+.subtitle{
 margin-top:15px;
-font-size:1.1rem;
+
+font-size:1.2rem;
+
+color:#888;
 }
 
 .btn{
+
 display:inline-block;
-margin-top:25px;
-padding:14px 30px;
-background:#ff5fa2;
+
+margin-top:35px;
+
+padding:15px 35px;
+
+background:#222;
+
 color:white;
-border-radius:40px;
+
 text-decoration:none;
+
+border-radius:50px;
+
 }
 
 section{
-padding:60px 20px;
+
 max-width:1200px;
+
 margin:auto;
+
+padding:80px 25px;
+
 }
 
 h2{
+
 text-align:center;
-margin-bottom:40px;
-color:#d63384;
+
+font-size:2rem;
+
+margin-bottom:50px;
+
+color:#222;
+
 }
 
 .products{
+
 display:grid;
+
 grid-template-columns:
 repeat(
 auto-fit,
-minmax(250px,1fr)
+minmax(260px,1fr)
 );
-gap:25px;
+
+gap:30px;
+
 }
 
 .card{
+
 background:white;
-border-radius:20px;
+
+border-radius:24px;
+
 overflow:hidden;
 
 box-shadow:
-0 10px 25px
-rgba(0,0,0,.08);
+
+0 10px 30px
+
+rgba(0,0,0,.05);
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:
+translateY(-8px);
+
 }
 
 .card img{
+
 width:100%;
-height:250px;
+
+height:260px;
+
 object-fit:cover;
+
 }
 
 .content{
-padding:20px;
+
+padding:25px;
+
 }
 
-.price{
-color:#ff2e7a;
-font-size:22px;
-font-weight:bold;
-margin:10px 0;
+.content h3{
+
+margin-bottom:10px;
+
+}
+
+.content p{
+
+color:#777;
+
 }
 
 .buy{
+
 display:block;
+
+margin-top:20px;
+
 text-align:center;
-padding:12px;
 
-background:#ff7db5;
+padding:14px;
 
-color:white;
+background:#f2f2f2;
 
-border-radius:15px;
+border-radius:20px;
 
 text-decoration:none;
+
+color:#222;
+
 }
 
 .about{
+
+max-width:800px;
+
+margin:auto;
+
 text-align:center;
-line-height:1.8;
+
+line-height:2;
+
+color:#666;
+
+}
+
+.review{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(
+auto-fit,
+minmax(300px,1fr)
+);
+
+gap:20px;
+
+}
+
+.box{
+
+background:white;
+
+padding:30px;
+
+border-radius:20px;
+
+box-shadow:
+
+0 8px 20px
+
+rgba(0,0,0,.04);
+
+}
+
+.contact{
+
+text-align:center;
+
+line-height:2;
+
 }
 
 footer{
-padding:30px;
+
+padding:35px;
+
 text-align:center;
 
-color:#8d5b73;
+color:#999;
+
 }
 
 </style>
+
 </head>
 
 <body>
@@ -134,17 +246,21 @@ color:#8d5b73;
 
 <h1>Innur Project</h1>
 
-<p>
-Find your favorite products here
+<p class="subtitle">
+
+Elegant • Simple • Timeless
+
 </p>
 
-<a href="#produk" class="btn">
-Shop Now
+<a href="#products" class="btn">
+
+Explore Collection
+
 </a>
 
 </header>
 
-<section id="produk">
+<section id="products">
 
 <h2>Categories</h2>
 
@@ -158,12 +274,12 @@ Shop Now
 
 <h3>Accessories</h3>
 
-<p>
-Beautiful and selected accessories
-</p>
+<p>Elegant collections for everyday style.</p>
 
-<a href="#" class="buy">
+<a class="buy">
+
 View Collection
+
 </a>
 
 </div>
@@ -178,12 +294,12 @@ View Collection
 
 <h3>Fashion</h3>
 
-<p>
-Simple, elegant, and trendy
-</p>
+<p>Simple and modern curated pieces.</p>
 
-<a href="#" class="buy">
+<a class="buy">
+
 View Collection
+
 </a>
 
 </div>
@@ -198,12 +314,12 @@ View Collection
 
 <h3>Custom Project</h3>
 
-<p>
-Special creations made with care
-</p>
+<p>Personal creations designed specially.</p>
 
-<a href="#" class="buy">
+<a class="buy">
+
 View Collection
+
 </a>
 
 </div>
@@ -213,3 +329,122 @@ View Collection
 </div>
 
 </section>
+
+<section>
+
+<h2>Best Seller</h2>
+
+<div class="products">
+
+<div class="card">
+
+<img src="best1.jpg">
+
+<div class="content">
+
+<h3>Editor's Choice</h3>
+
+<p>Most loved collection.</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="best2.jpg">
+
+<div class="content">
+
+<h3>Trending</h3>
+
+<p>Popular and elegant selections.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>About Us</h2>
+
+<div class="about">
+
+Welcome to Innur Project.
+
+A space created to present simple,
+beautiful, and carefully selected collections.
+
+Every detail matters.
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Customer Reviews</h2>
+
+<div class="review">
+
+<div class="box">
+
+★★★★★
+
+<br><br>
+
+Beautiful and elegant.
+
+</div>
+
+<div class="box">
+
+★★★★★
+
+<br><br>
+
+Minimalist and premium.
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Contact</h2>
+
+<div class="contact">
+
+Instagram
+
+<br>
+
+@innurproject
+
+<br><br>
+
+WhatsApp
+
+<br>
+
+08xxxxxxxxxx
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Innur Project
+
+</footer>
+
+</body>
+
+</html>
